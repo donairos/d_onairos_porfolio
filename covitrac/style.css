@@ -1,0 +1,161 @@
+body {
+  background: ;
+}
+
+.navbar {
+  background: #01305c;
+  padding: 25px;
+}
+
+.navbar ul {
+  margin-right: 30%;
+}
+
+.navbar ul li a {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+.navbar .navbar-brand {
+  margin-left: 20%;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.stayhome .jumbotron {
+  background: url("stayhome.png") no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+@media (max-width: 575.98px) {
+  .stayhome .jumbotron {
+    background: url("stayhome.png") no-repeat;
+    background-size: cover;
+    height: 55vh;
+    font-size: 10px;
+  }
+}
+
+.stayhome .staycontent {
+  float: right;
+  padding: 6em;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  text-shadow: 0 1px 3px black;
+}
+
+.jumbotron {
+  background-color: #002140;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.jumbotron h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
+.case-icon {
+  width: 40px;
+}
+
+.case-container .pill {
+  margin-bottom: 5%;
+}
+
+.case-container .col-sm-6 .pill {
+  color: white;
+  background-color: #00417d;
+  padding: 1em;
+  border-radius: 100px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.case-container .col-sm-6 .pill p {
+  color: #ccc;
+  font-size: 18px;
+}
+
+.case-container .col-sm-3 .pill {
+  color: white;
+  background-color: #00417d;
+  padding: 1em;
+  border-radius: 100px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.case-container .col-sm-3 .pill p {
+  color: #ccc;
+  font-size: 18px;
+}
+
+.global-container .box-global,
+.box-global2 {
+  margin-bottom: 3%;
+}
+
+.global-container .jumbotron p {
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
+
+.global-container .box-global p {
+  color: #f2f2f2;
+}
+
+.global-container .box-global2 p {
+  color: #f2f2f2;
+}
+
+.global-container .box-global3 p {
+  color: #f2f2f2;
+}
+
+.global-container .col-sm-4 .box-global {
+  padding: 1.5em;
+  background-color: #bf2626;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+.global-container .col-sm-4 .box-global2 {
+  padding: 1.5em;
+  background-color: #32a852;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+.global-container .col-sm-4 .box-global3 {
+  padding: 1.5em;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+.page-footer {
+  background-color: #000d21;
+  font-family: "Quicksand", sans-serif;
+  padding: 1em;
+  color: white;
+}
+
+.page-footer a {
+  color: white;
+  text-decoration: none;
+}

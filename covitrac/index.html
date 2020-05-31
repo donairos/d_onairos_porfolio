@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covitrac</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <script src="CountUp.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+      <a class="navbar-brand" href="index.html"
+        ><span class="c" style="color: #bf2626;">C</span
+        ><span class="o" style="color: #32a852;">o</span>vitrac</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="contributions.html">Contributions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Prevent Covid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Soon...</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+    <div class="container">
+      <div class="stayhome">
+        <div class="jumbotron">
+          <div class="staycontent">
+            <h1>
+              <span class="stop" style="color: #f03030;">Stop the Spread</span>
+            </h1>
+            <h1>
+              <span classclass="stay" style="color: white;">Stay at Home.</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="case-container">
+        <div class="jumbotron">
+          <h4><img src="live.png" width="25px" /> Live Update</h4>
+          <h1 id="country"></h1>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="pill">
+                <img src="virus.png" class="case-icon" />
+                <h2 id="infected"></h2>
+                <p>Infected</p>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="pill">
+                <img src="planet.png" class="case-icon" />
+                <h2 id="recovered"></h2>
+                <p>Recovered</p>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="pill">
+                <img src="death.png" class="case-icon" />
+                <h2 id="death"></h2>
+                <p>Deaths</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="global-container">
+        <div class="jumbotron">
+          <h1><img src="world.png" width="60px;" /> Global</h1>
+          <p>Status of Covid-19 around the World</p>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="box-global">
+                <h2 id="infected-global"></h2>
+                <p>Total Infected</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="box-global2">
+                <h2 id="recovered-global"></h2>
+                <p>Total Recovered</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="box-global3">
+                <h2 id="death-global"></h2>
+                <p>Total Deaths</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark pt-4">
+      <!-- Footer Elements -->
+      <div class="container">
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">
+              Created with ❤️ by
+              <a href="https://github.com/donairos">Den Soriano</a>
+            </h5>
+          </li>
+          <li>
+            <h5 class="mb-1">
+              <br />
+              <img src="denchibi.png" width="80px" alt="" />
+            </h5>
+          </li>
+        </ul>
+        <!-- Call to action -->
+      </div>
+      <!-- Footer Elements -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- BOOSTRAP CDNs-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
