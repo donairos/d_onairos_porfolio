@@ -13,8 +13,6 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
-    <script src="CountUp.min.js"></script>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -45,7 +43,7 @@
             <a class="nav-link" href="#">Prevent Covid</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Soon...</a>
+            <a class="nav-link" href="#">Latest News</a>
           </li>
         </ul>
       </div>
@@ -66,33 +64,85 @@
         <h1>ICONS used</h1>
         <br />
         <p>
-          <img src="virus.png" width="50px;" alt="" /> Icon made by
+          <img
+            data-src="virus.png"
+            width="50px;"
+            alt="lazy"
+            loading="lazy"
+            class="lazyload"
+          />
+          Icon made by
           <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from
           <a href="https://flaticon.com">www.flaticon.com</a>
         </p>
 
         <br />
         <p>
-          <img src="planet.png" width="50px;" alt="" /> Icon made by
+          <img
+            data-src="planet.png"
+            width="50px;"
+            alt="lazy"
+            loading="lazy"
+            class="lazyload"
+          />
+          Icon made by
           <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from
           <a href="https://flaticon.com">www.flaticon.com</a>
         </p>
 
         <br />
         <p>
-          <img src="death.png" width="50px;" alt="" /> Icon made by
+          <img
+            data-src="death.png"
+            width="50px;"
+            alt="lazy"
+            loading="lazy"
+            class="lazyload"
+          />
+          Icon made by
           <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from
           <a href="https://flaticon.com">www.flaticon.com</a>
         </p>
 
         <br />
         <p>
-          <img src="world.png" width="50px;" alt="" /> Icon made by
+          <img
+            data-src="world.png"
+            width="50px;"
+            alt="lazy"
+            loading="lazy"
+            class="lazyload"
+          />
+          Icon made by
           <a href="https://www.flaticon.com/authors/turkkub">turkkub</a> from
           <a href="https://flaticon.com">www.flaticon.com</a>
         </p>
       </div>
     </div>
+
+    <!-- Lazyloading images -->
+    <script>
+      if ("loading" in HTMLImageElement.prototype) {
+        //Native Lazy Loading Supported!
+
+        console.log("yay!");
+
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach((img) => {
+          img.src = img.dataset.src;
+        });
+      } else {
+        // Not supported!
+
+        console.log("boo!");
+
+        const script = document.createElement("script");
+        script.src =
+          "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.8/lazysizes.min.js";
+        document.body.appendChild(script);
+      }
+    </script>
+    <!-- End of Lazyloading images-->
 
     <!-- Footer -->
     <footer class="page-footer font-small unique-color-dark pt-4">
